@@ -5,18 +5,25 @@ WEB_PATH=/var/www/html/P3_QUADRELLI_code
 CSS_PATH=/var/www/html/P3_QUADRELLI_code/css
 SCSS_PATH=/var/www/html/P3_QUADRELLI_code/scss
 
+#FLUSH CSS FOLDER
+rm $CSS_PATH/*
 for folder in $(ls $SCSS_PATH)
 do
 	for file in $(ls $SCSS_PATH/$folder)
 	do
 		if [ ! -z $file ]
 		then
-			sass $SCSS_PATH/$folder/$file $CSS_PATH/$file
+			fwthoutext=$(echo $file|cut -d"." -f1)
+			sass $SCSS_PATH/$folder/$file $CSS_PATH/$fwthoutext.css
 		fi
 	done
 done
 
-if [ $1 = "flush" ]
+#FLUSH IF NEEDED AFTER CONVERSION
+if [ ! -z $1 ]
 then
-	rm $CSS_PATH/*
+	if [ $1 = "flush" ]
+	then
+		rm $CSS_PATH/*
+	fi
 fi
