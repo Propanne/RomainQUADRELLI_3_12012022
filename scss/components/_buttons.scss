@@ -1,0 +1,12 @@
+@import '../abstracts/colors.scss';
+
+.round-button{
+  height: 40px;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  &--pink{
+      color: white;
+      background-image: linear-gradient(lighten($color-primary, 15%),$color-primary);
+  }
+}

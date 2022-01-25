@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>OhMyFood - Accueil</title>
-    <link rel="stylesheet" href="css/_header.css">
+    <link rel="stylesheet" href="css/_accueil.css">
+    <link rel="stylesheet" href="css/_block.css">
+    <link rel="stylesheet" href="css/_titles.css">
+    <link rel="stylesheet" href="css/_buttons.css">
     <!-- CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
@@ -14,14 +17,16 @@
     </header>
     <!-- ####################### MAIN CONTENT #######################-->
     <section>
-      <div>
-        <i class="fas fa-map-marker-alt"></i><p>Paris, Belleville</p>
+      <div class="container-logo container-logo--localisation">
+        <i class="fas fa-map-marker-alt container-logo__logo"></i><p class="container-logo__description">Paris, Belleville</p>
       </div>
+    </section>
+    <section class="section-container section-container--titres">
       <h1>Réservez le menu qui vous convient</h1>
       <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-      <button>Explorer nos restaurants</button>
+      <button class="round-button round-button--pink ">Explorer nos restaurants</button>
     </section>
-    <section>
+    <section class="section-container">
       <h1>Fonctionnement</h1>
       <div>
         <div>

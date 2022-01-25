@@ -1,0 +1,17 @@
+@import '../abstracts/colors.scss';
+@import '../abstracts/_flexbox.scss';
+
+.container-logo{
+  @extend %flexbox-horizontal;
+  &--localisation{
+    background-color: $basic-grey;
+    padding:20px 0px 20px 0px;
+    justify-content: center;
+  }
+  &__logo {
+    margin-right: 10px;
+  }
+  &__description {
+    margin: 0;
+  }
+}
