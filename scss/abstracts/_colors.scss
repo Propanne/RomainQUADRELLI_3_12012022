@@ -2,3 +2,12 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $basic-grey: #EBEBEB;
+
+.background{
+  &--grey{
+    background-color:$basic-grey;
+  }
+  &--light-grey{
+    background-color: lighten($basic-grey,5%);
+  }
+}

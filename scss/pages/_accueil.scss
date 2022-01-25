@@ -1,17 +1,38 @@
 @import '../abstracts/colors.scss';
 @import '../abstracts/_flexbox.scss';
 
-.container-logo{
-  @extend %flexbox-horizontal;
-  &--localisation{
-    background-color: $basic-grey;
-    padding:20px 0px 20px 0px;
-    justify-content: center;
+.flexbox-fonctionnement--format{
+  margin-bottom: 20px;
+}
+.card{
+  background-color: lighten($basic-grey,5%);
+  align-items: center;
+  &-fonctionnement--padding{
+    padding: 10px 30px 10px 30px;
   }
-  &__logo {
-    margin-right: 10px;
+}
+.text{
+  &-fonctionnement{
+    &--padding{
+      padding-left: 30px;
+    }
   }
-  &__description {
-    margin: 0;
+}
+.numero-fonctionnement{
+  position: relative;
+  right: -6px;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  line-height: 24px;
+  text-align:center;
+  margin:0;
+  padding:0;
+  color: white;
+  background-color: $color-primary;
+}
+.logo {
+  &-fonctionnement{
+    padding-left: 30px;
   }
 }

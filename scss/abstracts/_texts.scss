@@ -1,0 +1,14 @@
+.center-text{
+  text-align: center;
+}
+.text{
+  &-main{
+    font-size:30px;
+  }
+  &-submain{
+    font-size:20px;
+  }
+  &--bold{
+    font-weight: bold;
+  }
+}
