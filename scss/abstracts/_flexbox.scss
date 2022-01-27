@@ -18,11 +18,14 @@
     &--full-width{
       flex-basis: 100%;
     }
-    &--20{
-      flex-basis: 20%;
+    &--10{
+      flex-basis: 10%;
     }
     &--80{
       flex-basis: 80%;
+    }
+    &--90{
+      flex-basis: 90%;
     }
   }
 }

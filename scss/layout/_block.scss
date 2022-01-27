@@ -1,3 +1,5 @@
+@import '../abstracts/colors.scss';
+
 body{
   margin: 0;
 }
@@ -9,6 +11,10 @@ header{
 }
 .section{
   &-fonctionnement{
-    padding: 0px 20px;
+    padding: 40px 20px;
+  }
+  &-restaurants {
+    background-color: lighten($basic-grey,5%);
+    padding: 40px 20px;
   }
 }
