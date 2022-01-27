@@ -10,6 +10,9 @@
   &-padding{
     padding: 20px 22px 40px 22px;
   }
+  &--children-right {
+    justify-content: flex-end;
+  }
   &--children-center{
     align-items: center;
     justify-content: center;

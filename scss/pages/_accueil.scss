@@ -1,5 +1,6 @@
-@import '../abstracts/colors.scss';
+@import '../abstracts/_colors.scss';
 @import '../abstracts/_flexbox.scss';
+@import '../components/_cards.scss';
 
 .flexbox-fonctionnement--format{
   margin-bottom: 20px;
@@ -35,4 +36,22 @@
   &-fonctionnement{
     padding-left: 30px;
   }
+}
+// ILLUSTRATION RESTAURANTS
+%illu-restaurants {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#illu-palette-gout {
+  background-image: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  @extend %illu-restaurants;
+  @extend .card-round--medium;
+}
+.new-tag{
+  text-align: center;
+  width:70px;
+  height: 20px;
+  margin: 10px;
 }

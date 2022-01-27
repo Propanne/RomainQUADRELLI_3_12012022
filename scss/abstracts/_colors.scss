@@ -10,4 +10,7 @@ $basic-grey: #EBEBEB;
   &--light-grey{
     background-color: lighten($basic-grey,5%);
   }
+  &--green{
+    background-color: #AFFFD0;
+  }
 }
