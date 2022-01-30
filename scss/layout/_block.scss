@@ -1,4 +1,5 @@
-@import '../abstracts/colors.scss';
+@import '../abstracts/_colors.scss';
+@import '../abstracts/_texts.scss';
 
 body{
   margin: 0;
@@ -8,6 +9,9 @@ header{
   background-repeat: no-repeat;
   background-position: center;
   height: 70px;
+}
+footer{
+  
 }
 .section{
   &-fonctionnement{
