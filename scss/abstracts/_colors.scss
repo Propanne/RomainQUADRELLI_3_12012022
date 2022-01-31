@@ -7,6 +7,12 @@ $basic-grey: #EBEBEB;
   &--grey{
     background-color:$basic-grey;
   }
+  &--white{
+    background-color: white;
+  }
+  &--tertiary{
+    background-color: $color-tertiary;
+  }
   &--light-grey{
     background-color: lighten($basic-grey,5%);
   }

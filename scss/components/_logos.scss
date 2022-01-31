@@ -4,4 +4,11 @@
   &--purple{
     color: $color-primary;
   }
+  &_company-background{
+    background-image: url("../images/ohmyfood@2x.svg");
+  }
+}
+.footer-logo{
+  height: 50px;
+  width: 100px;
 }

@@ -2,9 +2,147 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>OhMyFood - Menu à la Française</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>OhMyFood - Menu à la française</title>
+    <link rel="stylesheet" href="css/_menu_francaise.css">
+    <link rel="stylesheet" href="css/_block.css">
+    <link rel="stylesheet" href="css/_texts.css">
+    <link rel="stylesheet" href="css/_cards.css">
+    <link rel="stylesheet" href="css/_logos.css">
+    <link rel="stylesheet" href="css/_buttons.css">
+    <link rel="stylesheet" href="css/_images.css">
+    <link rel="stylesheet" href="css/_formatting.css">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <body>
+    <!-- ####################### HEADER #######################-->
+    <header class="flexbox-horizontal">
+      <div class="flexbox-horizontal flexbox-item--10 flexbox--children-center">
+        <i class="fas fa-arrow-left fa-lg"></i>
+      </div>
+    </header>
+    <!-- ####################### MAIN CONTENT #######################-->
+    <section id="header-illustration">
+    </section>
+    <section id="menu-container" class="background--white padding--20 card-round_top--high">
+      <div class="flexbox-horizontal flexbox--space-between padding-right--20">
+        <h3>À la française</h3>
+        <div class="flexbox-horizontal flexbox--children-center">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div class="flexbox-horizontal">
+        <!-- ENTREES -->
+        <div class="flexbox-horizontal flexbox-item--full-width margin-bottom--30">
+          <p class="underline-titles">ENTRÉES</p>
+          <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow padding--10 margin-bottom--10">
+            <div class="flexbox-horizontal">
+              <p class="text--no-format text--bold flexbox-item--full-width">Tartare de poulpe acidulé</p>
+              <p class="text--no-format flexbox-item--full-width">Aux zestes d'orange</p>
+            </div>
+            <div class="flexbox-horizontal flexbox--children-flex-end padding-right--10">
+              <p class="text--no-format text--bold">25€</p>
+            </div>
+          </div>
+          <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow padding--10 margin-bottom--10">
+            <div class="flexbox-horizontal">
+              <p class="text--no-format text--bold flexbox-item--full-width">Velouté de légumes d'antan</p>
+              <p class="text--no-format flexbox-item--full-width">Carotte, panais, topinambour</p>
+            </div>
+            <div class="flexbox-horizontal flexbox--children-flex-end padding-right--10">
+              <p class="text--no-format text--bold">35€</p>
+            </div>
+          </div>
+          <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow padding--10 margin-bottom--10">
+            <div class="flexbox-horizontal">
+              <p class="text--no-format text--bold flexbox-item--full-width">Soupe à l'oignon</p>
+              <p class="text--no-format flexbox-item--full-width">Revisitée</p>
+            </div>
+            <div class="flexbox-horizontal flexbox--children-flex-end padding-right--10">
+              <p class="text--no-format text--bold">20€</p>
+            </div>
+          </div>
+        </div>
+        <!-- PLATS -->
+        <div class="flexbox-horizontal flexbox-item--full-width margin-bottom--30">
+          <p class="underline-titles">PLATS</p>
+          <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow padding--10 margin-bottom--10">
+            <div class="flexbox-horizontal">
+              <p class="text--no-format text--bold flexbox-item--full-width">Coquille Saint-Jacques</p>
+              <p class="text--no-format flexbox-item--full-width">Accompagnées d'une purée de panais</p>
+            </div>
+            <div class="flexbox-horizontal flexbox--children-flex-end padding-right--10">
+              <p class="text--no-format text--bold">40€</p>
+            </div>
+          </div>
+          <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow padding--10 margin-bottom--10">
+            <div class="flexbox-horizontal">
+              <p class="text--no-format text--bold flexbox-item--full-width">Magret de canard</p>
+              <p class="text--no-format flexbox-item--full-width">Et parmentier de prommes de terres</p>
+            </div>
+            <div class="flexbox-horizontal flexbox--children-flex-end padding-right--10">
+              <p class="text--no-format text--bold">35€</p>
+            </div>
+          </div>
+          <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow padding--10 margin-bottom--10">
+            <div class="flexbox-horizontal">
+              <p class="text--no-format text--bold flexbox-item--full-width">Pigeonneau d'Ille-et-Vilaine</p>
+              <p class="text--no-format flexbox-item--full-width">Sur son lit de gnocchis aux légumes</p>
+            </div>
+            <div class="flexbox-horizontal flexbox--children-flex-end padding-right--10">
+              <p class="text--no-format text--bold">44€</p>
+            </div>
+          </div>
+        </div>
+        <!-- DESSERTS -->
+        <div class="flexbox-horizontal flexbox-item--full-width margin-bottom--30">
+          <p class="underline-titles">DESSERTS</p>
+          <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow padding--10 margin-bottom--10">
+            <div class="flexbox-horizontal">
+              <p class="text--no-format text--bold flexbox-item--full-width">Pétales de violettes glacés</p>
+              <p class="text--no-format flexbox-item--full-width">Et purée de noisettes</p>
+            </div>
+            <div class="flexbox-horizontal flexbox--children-flex-end padding-right--10">
+              <p class="text--no-format text--bold">18€</p>
+            </div>
+          </div>
+          <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow padding--10 margin-bottom--10">
+            <div class="flexbox-horizontal">
+              <p class="text--no-format text--bold flexbox-item--full-width">Fondant au chocolat</p>
+              <p class="text--no-format flexbox-item--full-width">Revisité</p>
+            </div>
+            <div class="flexbox-horizontal flexbox--children-flex-end padding-right--10">
+              <p class="text--no-format text--bold">22€</p>
+            </div>
+          </div>
+          <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow padding--10 margin-bottom--10">
+            <div class="flexbox-horizontal">
+              <p class="text--no-format text--bold flexbox-item--full-width">Millefeuille croustillant</p>
+              <p class="text--no-format flexbox-item--full-width">Myrtilles et pâte d'amende</p>
+            </div>
+            <div class="flexbox-horizontal flexbox--children-flex-end padding-right--10">
+              <p class="text--no-format text--bold">23€</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text--center">
+        <button id="command-button" class="round-button round-button--pink text--bold">Commander</button>
+      </div>
+    </section>
 
+    <!-- ####################### FOOTER #######################-->
+    <footer class="flexbox-horizontal padding--20 padding-bottom--30">
+      <div class="background--center--no-repeat background--contain logo_company-background footer-logo"></div>
+      <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--children-baseline">
+        <i class="fas fa-utensils width--17px"></i><p class="text--no-format text--bold margin-left--5 margin-top-bottom--5 flexbox-item--full-width">Proposer un restaurant</p>
+      </div>
+      <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--children-baseline">
+        <i class="fas fa-hands-helping width--17px"></i><p class="text--no-format text--bold margin-left--5 margin-top-bottom--5 flexbox-item--full-width">Devenir partenaire</p>
+      </div>
+      <p class="text--no-format flexbox-item--full-width margin-top-bottom--5">Mentions légales</p>
+      <p class="text--no-format flexbox-item--full-width margin-top-bottom--5">Contact</p>
+    </footer>
   </body>
 </html>

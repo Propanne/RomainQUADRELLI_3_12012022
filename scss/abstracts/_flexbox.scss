@@ -4,6 +4,9 @@
     flex-direction:row;
     flex-wrap: wrap;
   }
+  &--space-between{
+    justify-content: space-between;
+  }
   &--nowrap{
     flex-wrap: nowrap;
   }
@@ -17,9 +20,18 @@
     align-items: center;
     justify-content: center;
   }
+  &--children-baseline{
+    align-items: baseline;
+  }
+  &--children-flex-end{
+    align-items: flex-end;
+  }
   &-item{
     &--full-width{
       flex-basis: 100%;
+    }
+    &--5{
+      flex-basis: 5%;
     }
     &--10{
       flex-basis: 10%;
@@ -32,6 +44,9 @@
     }
     &--90{
       flex-basis: 90%;
+    }
+    &--95{
+      flex-basis: 95%;
     }
   }
 }

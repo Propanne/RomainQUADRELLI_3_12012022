@@ -1,17 +1,19 @@
 @import '../abstracts/_colors.scss';
 @import '../abstracts/_texts.scss';
+@import '../components/_logos.scss';
 
 body{
   margin: 0;
 }
 header{
-  background-image:url("../images/ohmyfood@2x.svg");
+  @extend .logo_company-background;
   background-repeat: no-repeat;
   background-position: center;
   height: 70px;
 }
 footer{
-  
+  background-color: darken($basic-grey, 70%);
+  color: white;
 }
 .section{
   &-fonctionnement{
