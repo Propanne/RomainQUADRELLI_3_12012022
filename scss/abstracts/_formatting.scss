@@ -61,3 +61,21 @@
     width: 17px;
   }
 }
+.responsive-padding{
+  &-right-left{
+    &--15{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+  }
+}
+@media only screen and (min-width: 989px) {
+  .responsive-padding{
+    &-right-left{
+      &--15{
+          padding-right: 15px;
+          padding-left: 15px;
+      }
+    }
+  }
+}

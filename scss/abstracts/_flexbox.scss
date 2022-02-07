@@ -50,3 +50,25 @@
     }
   }
 }
+.responsive-flexbox{
+  &-item{
+    &--33{
+      flex-basis: none;
+    }
+    &--30{
+      flex-basis: none;
+    }
+  }
+}
+@media only screen and (min-width: 989px) {
+  .responsive-flexbox{
+    &-item{
+      &--33{
+        flex-basis: 33%;
+      }
+      &--30{
+        flex-basis: 30%;
+      }
+    }
+  }
+}
