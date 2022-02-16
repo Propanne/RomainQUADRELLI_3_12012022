@@ -2,6 +2,9 @@
 @import '../abstracts/_flexbox.scss';
 @import '../components/_images.scss';
 
+$slide-duration: 1000ms;
+$slide-menu-delay: 200ms;
+
 #header-illustration{
   height: 250px;
   width: 100%;
@@ -26,4 +29,21 @@
 }
 #command-button{
   min-width: 150px;
+}
+
+// ################################### MENU - SLIDE ANIMATION
+@for $i from 1 through 3 {
+    #menu_#{$i}{
+      animation: SlideBotToTop $slide-duration $i * $slide-menu-delay backwards;
+    }
+}
+@keyframes SlideBotToTop {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }

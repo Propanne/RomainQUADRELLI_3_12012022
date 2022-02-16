@@ -10,3 +10,26 @@
       background-image: linear-gradient($color-secondary,$color-primary);
   }
 }
+.standard-button{
+  position: relative;
+  z-index: 1;
+  &:hover{
+    cursor: pointer;
+    &::after{
+      opacity: 1;
+    }
+  }
+  &::after{
+    content: "";
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(lighten($color-secondary,5%),lighten($color-primary,5%));
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+}

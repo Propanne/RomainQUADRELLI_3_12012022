@@ -12,3 +12,10 @@
   height: 50px;
   width: 100px;
 }
+.heart-icon{
+  font-weight: 400;
+  transition: font-weight 250ms ease-in-out;
+    &:active, &:hover{
+      font-weight: 900;
+    }
+}

@@ -3,6 +3,12 @@
 @import '../components/_cards.scss';
 @import '../components/_images.scss';
 
+$loading-duration: 1500ms;
+$loading-delay: 1000ms;
+$arrow-duration: 1000ms;
+$arrow-delay: 1000ms;
+
+
 .flexbox-fonctionnement--format{
   margin-bottom: 20px;
 }
@@ -68,4 +74,37 @@
   width:70px;
   height: 20px;
   margin: 10px;
+}
+
+// ################################### LOADING ARROW
+
+#loading-arrow{
+  animation: RemoveLoading $arrow-duration $arrow-delay both;
+}
+#menu-list{
+  animation: LoadingArrow $loading-duration $loading-delay both;
+}
+@keyframes RemoveLoading {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(999px);
+    opacity: 0;
+  }
+}
+@keyframes LoadingArrow{
+  0% {
+    transform: translateY(999px);
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

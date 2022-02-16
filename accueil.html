@@ -28,7 +28,7 @@
       <div class="flexbox-item--full-width flexbox-padding center-text background--light-grey">
         <h1 class="flexbox-item--full-width text-main">Réservez le menu qui vous convient</h1>
         <p class="flexbox-item--full-width text-submain">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <button class="round-button round-button--pink text--bold">Explorer nos restaurants</button>
+        <button class="standard-button round-button round-button--pink text--bold">Explorer nos restaurants</button>
       </div>
     </section>
     <!-- FONCTIONNEMENT PART -->
@@ -56,9 +56,12 @@
       </div>
     </section>
 
-    <section class="section-restaurants">
+    <section class="flexbox-horizontal section-restaurants">
       <h1>Restaurants</h1>
-      <div class="flexbox-horizontal flexbox--space-between">
+      <div id="loading-arrow" class="flexbox-horizontal flexbox--children-center flexbox-item--full-width">
+        <img alt="load-spinner" src="images/loading-arrow.gif">
+      </div>
+      <div id="menu-list" class="flexbox-horizontal flexbox--space-between flexbox-item--full-width">
         <!-- ######## La palette du goût ######## -->
         <div class="responsive-flexbox-item--30 responsive-padding-right-left--10 card-round--medium card-shadow flexbox-item--full-width margin--10-0">
           <a href="menu_la_palette_du_gout.html">
@@ -71,7 +74,7 @@
                 <p class="text--no-format">Ménilmontant</p>
               </div>
               <div class="flexbox-item--20 flexbox-horizontal flexbox--children-center padding--15">
-                <i class="far fa-heart"></i>
+                <i class="heart-icon far fa-heart"></i>
               </div>
             </div>
           </a>
@@ -88,7 +91,7 @@
                 <p class="text--no-format">Charonne</p>
               </div>
               <div class="flexbox-item--20 flexbox-horizontal flexbox--children-center padding--15">
-                <i class="far fa-heart"></i>
+                <i class="heart-icon far fa-heart"></i>
               </div>
             </div>
           </a>
@@ -105,14 +108,14 @@
                 <p class="text--no-format">Cité Rouge</p>
               </div>
               <div class="flexbox-item--20 flexbox-horizontal flexbox--children-center padding--15">
-                <i class="far fa-heart"></i>
+                <i class="heart-icon far fa-heart"></i>
               </div>
             </div>
           </a>
         </div>
         <!-- ######## Le délice des sens ######## -->
         <div class="responsive-flexbox-item--30 responsive-padding-right-left--10 card-round--medium card-shadow flexbox-item--full-width margin--10-0">
-          <a href="menu_le_delice_des_sens.html">
+          <a href="menu_a_la_francaise.html">
             <div id="illu-delice-sens" class="flexbox-horizontal flexbox--children-right">
               <p class="new-tag text-padding--5 text--bold text--green background--green new-tag display--none">Nouveau</p>
             </div>
@@ -122,7 +125,7 @@
                 <p class="text--no-format">Folie-Méricourt</p>
               </div>
               <div class="flexbox-item--20 flexbox-horizontal flexbox--children-center padding--15">
-                <i class="far fa-heart"></i>
+                <i class="heart-icon far fa-heart"></i>
               </div>
             </div>
           </a>
