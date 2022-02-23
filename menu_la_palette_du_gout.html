@@ -2,9 +2,156 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>OhMyFood - Menu La Palette du goût</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>OhMyFood - La palette du goût</title>
+    <link rel="stylesheet" href="css/_menus.css">
+    <link rel="stylesheet" href="css/_block.css">
+    <link rel="stylesheet" href="css/_texts.css">
+    <link rel="stylesheet" href="css/_cards.css">
+    <link rel="stylesheet" href="css/_logos.css">
+    <link rel="stylesheet" href="css/_buttons.css">
+    <link rel="stylesheet" href="css/_images.css">
+    <link rel="stylesheet" href="css/_formatting.css">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
+    <!-- ####################### HEADER #######################-->
+    <header class="flexbox-horizontal">
+      <div class="flexbox-horizontal flexbox-item--10 flexbox--children-center">
+        <i class="fas fa-arrow-left fa-lg"></i>
+      </div>
+    </header>
+    <!-- ####################### MAIN CONTENT #######################-->
+    <section id="header-illustration">
+    </section>
+    <section id="menu-container" class="background--white padding--20 card-round_top--high">
+      <div class="flexbox-horizontal flexbox--space-between padding-right--20">
+        <h3 class="font-titles">La palette du goût</h3>
+        <div class="flexbox-horizontal flexbox--children-center">
+          <i class="heart-icon far fa-heart"></i>
+        </div>
+      </div>
+      <div class="flexbox-horizontal">
+        <!-- ENTREES -->
+        <div id="menu_1" class="flexbox-horizontal flexbox-item--full-width margin-bottom--30">
+          <p class="underline-titles">ENTRÉES</p>
+          <div class="menu-item flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow margin-bottom--10">
+            <div class="menu-description flexbox-horizontal padding--10">
+              <p class="text--no-format text--bold text-overflow--hidden-with-ellipsis flexbox-item--full-width">Fricassée d'escargot</p>
+              <p class="text--no-format text-overflow--hidden-with-ellipsis flexbox-item--full-width">Au piment d'Espelette</p>
+            </div>
+            <p class="menu-price flexbox-item--flex-end padding--10 text--no-format text--bold">25€</p>
+            <div class="menu-validation flexbox-horizontal flexbox--children-center background--green card-round_right--medium height--100">
+              <i class="fa-solid fa-circle-check text--white"></i>
+            </div>
+          </div>
+          <div class="menu-item flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow margin-bottom--10">
+            <div class="menu-description flexbox-horizontal padding--10">
+              <p class="text--no-format text--bold text-overflow--hidden-with-ellipsis flexbox-item--full-width">Foie gras de canard mi-cuit</p>
+              <p class="text--no-format text-overflow--hidden-with-ellipsis flexbox-item--full-width">Et ses copeaux de truffe noire</p>
+            </div>
+            <p class="menu-price flexbox-item--flex-end padding--10 text--no-format text--bold">35€</p>
+            <div class="menu-validation flexbox-horizontal flexbox--children-center background--green card-round_right--medium height--100">
+              <i class="fa-solid fa-circle-check text--white"></i>
+            </div>
+          </div>
+          <div class="menu-item flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow margin-bottom--10">
+            <div class="menu-description flexbox-horizontal padding--10">
+              <p class="text--no-format text--bold text-overflow--hidden-with-ellipsis flexbox-item--full-width">Oeuf au plat</p>
+              <p class="text--no-format text-overflow--hidden-with-ellipsis flexbox-item--full-width">Assaisonné à la truffe sur lit de caviar</p>
+            </div>
+            <p class="menu-price flexbox-item--flex-end padding--10 text--no-format text--bold">20€</p>
+            <div class="menu-validation flexbox-horizontal flexbox--children-center background--green card-round_right--medium height--100">
+              <i class="fa-solid fa-circle-check text--white"></i>
+            </div>
+          </div>
+        </div>
+        <!-- PLATS -->
+        <div id="menu_2" class="flexbox-horizontal flexbox-item--full-width margin-bottom--30">
+          <p class="underline-titles">PLATS</p>
+          <div class="menu-item flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow margin-bottom--10">
+            <div class="menu-description padding--10">
+              <p class="text--no-format text--bold text-overflow--hidden-with-ellipsis flexbox-item--full-width">Filet de boeuf aux herbes</p>
+              <p class="text--no-format text-overflow--hidden-with-ellipsis flexbox-item--full-width">Accompagné de sa ribambelle de légumes</p>
+            </div>
+            <p class="menu-price flexbox-item--flex-end padding--10 text--no-format text--bold">40€</p>
+            <div class="menu-validation flexbox-horizontal flexbox--children-center background--green card-round_right--medium height--100">
+              <i class="fa-solid fa-circle-check text--white"></i>
+            </div>
+          </div>
+          <div class="menu-item flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow margin-bottom--10">
+            <div class="menu-description padding--10">
+              <p class="text--no-format text--bold text-overflow--hidden-with-ellipsis flexbox-item--full-width">Parmentier de queue de boeuf</p>
+              <p class="text--no-format text-overflow--hidden-with-ellipsis flexbox-item--full-width">À la truffe noire sur sa purée de panais</p>
+            </div>
+            <p class="menu-price flexbox-item--flex-end padding--10 text--no-format text--bold">35€</p>
+            <div class="menu-validation flexbox-horizontal flexbox--children-center background--green card-round_right--medium height--100">
+              <i class="fa-solid fa-circle-check text--white"></i>
+            </div>
+          </div>
+          <div class="menu-item flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow margin-bottom--10">
+            <div class="menu-description padding--10">
+              <p class="text--no-format text--bold text-overflow--hidden-with-ellipsis flexbox-item--full-width">Filet de turbot</p>
+              <p class="text--no-format text-overflow--hidden-with-ellipsis flexbox-item--full-width">Aux agrumes</p>
+            </div>
+            <p class="menu-price flexbox-item--flex-end padding--10 text--no-format text--bold">44€</p>
+            <div class="menu-validation flexbox-horizontal flexbox--children-center background--green card-round_right--medium height--100">
+              <i class="fa-solid fa-circle-check text--white"></i>
+            </div>
+          </div>
+        </div>
+        <!-- DESSERTS -->
+        <div id="menu_3" class="flexbox-horizontal flexbox-item--full-width margin-bottom--30">
+          <p class="underline-titles">DESSERTS</p>
+          <div class="menu-item flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow margin-bottom--10">
+            <div class="menu-description padding--10">
+              <p class="text--no-format text--bold text-overflow--hidden-with-ellipsis flexbox-item--full-width">Paris-Brest</p>
+              <p class="text--no-format text-overflow--hidden-with-ellipsis flexbox-item--full-width">Revisité</p>
+            </div>
+            <p class="menu-price flexbox-item--flex-end padding--10 text--no-format text--bold">18€</p>
+            <div class="menu-validation flexbox-horizontal flexbox--children-center background--green card-round_right--medium height--100">
+              <i class="fa-solid fa-circle-check text--white"></i>
+            </div>
+          </div>
+          <div class="menu-item flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow margin-bottom--10">
+            <div class="menu-description padding--10">
+              <p class="text--no-format text--bold text-overflow--hidden-with-ellipsis flexbox-item--full-width">Macaron au chocolat d'exception</p>
+              <p class="text--no-format text-overflow--hidden-with-ellipsis flexbox-item--full-width">Et glace à la vanille de Madagascar</p>
+            </div>
+            <p class="menu-price flexbox-item--flex-end padding--10 text--no-format text--bold">22€</p>
+            <div class="menu-validation flexbox-horizontal flexbox--children-center background--green card-round_right--medium height--100">
+              <i class="fa-solid fa-circle-check text--white"></i>
+            </div>
+          </div>
+          <div class="menu-item flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--space-between card-round--medium card-shadow margin-bottom--10">
+            <div class="menu-description padding--10">
+              <p class="text--no-format text--bold text-overflow--hidden-with-ellipsis flexbox-item--full-width">Mousse au chocolat </p>
+              <p class="text--no-format text-overflow--hidden-with-ellipsis flexbox-item--full-width">Au piment d'Espelette et à la truffe noire</p>
+            </div>
+            <p class="menu-price flexbox-item--flex-end padding--10 text--no-format text--bold">23€</p>
+            <div class="menu-validation flexbox-horizontal flexbox--children-center background--green card-round_right--medium height--100">
+              <i class="fa-solid fa-circle-check text--white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text--center">
+        <button id="command-button" class="standard-button round-button round-button--pink text--bold">Commander</button>
+      </div>
+    </section>
 
+    <!-- ####################### FOOTER #######################-->
+    <footer class="flexbox-horizontal padding--20 padding-bottom--30">
+      <div class="background--center--no-repeat background--contain logo_company-background footer-logo"></div>
+      <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--children-baseline">
+        <i class="fas fa-utensils width--17px"></i><p class="text--no-format text--bold margin-left--5 margin-top-bottom--5 flexbox-item--full-width">Proposer un restaurant</p>
+      </div>
+      <div class="flexbox-horizontal flexbox--nowrap flexbox-item--full-width flexbox--children-baseline">
+        <i class="fas fa-hands-helping width--17px"></i><p class="text--no-format text--bold margin-left--5 margin-top-bottom--5 flexbox-item--full-width">Devenir partenaire</p>
+      </div>
+      <p class="text--no-format flexbox-item--full-width margin-top-bottom--5">Mentions légales</p>
+      <p class="text--no-format flexbox-item--full-width margin-top-bottom--5"><a href="mailto:contact@ohmyfood.com">Contact</a></p>
+    </footer>
   </body>
 </html>
