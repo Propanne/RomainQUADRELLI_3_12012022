@@ -25,8 +25,11 @@
 .flexbox--children-flex-end {
   align-items: flex-end;
 }
+.flexbox-item--flex-end {
+  align-self: flex-end;
+}
 .flexbox-item--full-width {
-  flex-basis: 100%;
+  width: 100%;
 }
 .flexbox-item--5 {
   flex-basis: 5%;
@@ -36,6 +39,12 @@
 }
 .flexbox-item--20 {
   flex-basis: 10%;
+}
+.flexbox-item--30 {
+  flex-basis: 30%;
+}
+.flexbox-item--40 {
+  flex-basis: 40%;
 }
 .flexbox-item--80 {
   flex-basis: 80%;

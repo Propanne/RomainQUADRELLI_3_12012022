@@ -32,11 +32,6 @@ $slide-menu-delay: 200ms;
 }
 
 // ################################### MENU - SLIDE ANIMATION
-@for $i from 1 through 3 {
-    #menu_#{$i}{
-      animation: SlideBotToTop $slide-duration $i * $slide-menu-delay backwards;
-    }
-}
 @keyframes SlideBotToTop {
   0% {
     transform: translateY(20%);
@@ -46,4 +41,36 @@ $slide-menu-delay: 200ms;
     transform: translateY(0%);
     opacity: 1;
   }
+}
+.menu {
+  &-description{
+    width: calc(100% - 80px);
+    transition: width 500ms ease-in-out;
+  }
+  &-price{
+    width: 40px;
+  }
+  &-validation{
+    width: 0px;
+    opacity: 0;
+    transition: width 500ms ease-in-out, opacity 500ms ease-in-out;
+  }
+  &-item {
+    overflow: hidden;
+    &:hover{
+      cursor: pointer;
+      & > .menu-validation {
+        width: 60px;
+        opacity: 1;
+      }
+      & > .menu-description {
+        width: calc(100% - 140px);
+      }
+    }
+  }
+}
+@for $i from 1 through 3 {
+    #menu_#{$i}{
+      animation: SlideBotToTop $slide-duration $i * $slide-menu-delay backwards;
+    }
 }

@@ -27,8 +27,11 @@
     align-items: flex-end;
   }
   &-item{
+    &--flex-end{
+      align-self: flex-end; 
+    }
     &--full-width{
-      flex-basis: 100%;
+      width: 100%;
     }
     &--5{
       flex-basis: 5%;
@@ -38,6 +41,12 @@
     }
     &--20{
       flex-basis: 10%;
+    }
+    &--30{
+      flex-basis: 30%;
+    }
+    &--40{
+      flex-basis: 40%;
     }
     &--80{
       flex-basis: 80%;

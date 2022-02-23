@@ -38,5 +38,13 @@ a {
 .text--green {
   color: #68B487;
 }
+.text--white {
+  color: white;
+}
+.text-overflow--hidden-with-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
 /*# sourceMappingURL=_texts.css.map */

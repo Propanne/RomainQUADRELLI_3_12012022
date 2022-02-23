@@ -41,8 +41,11 @@
 .flexbox--children-flex-end {
   align-items: flex-end;
 }
+.flexbox-item--flex-end {
+  align-self: flex-end;
+}
 .flexbox-item--full-width {
-  flex-basis: 100%;
+  width: 100%;
 }
 .flexbox-item--5 {
   flex-basis: 5%;
@@ -52,6 +55,12 @@
 }
 .flexbox-item--20 {
   flex-basis: 10%;
+}
+.flexbox-item--30 {
+  flex-basis: 30%;
+}
+.flexbox-item--40 {
+  flex-basis: 40%;
 }
 .flexbox-item--80 {
   flex-basis: 80%;
@@ -116,6 +125,42 @@
   min-width: 150px;
 }
 
+@keyframes SlideBotToTop {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.menu-description {
+  width: calc(100% - 80px);
+  transition: width 500ms ease-in-out;
+}
+.menu-price {
+  width: 40px;
+}
+.menu-validation {
+  width: 0px;
+  opacity: 0;
+  transition: width 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+.menu-item {
+  overflow: hidden;
+}
+.menu-item:hover {
+  cursor: pointer;
+}
+.menu-item:hover > .menu-validation {
+  width: 60px;
+  opacity: 1;
+}
+.menu-item:hover > .menu-description {
+  width: calc(100% - 140px);
+}
+
 #menu_1 {
   animation: SlideBotToTop 1000ms 200ms backwards;
 }
@@ -126,17 +171,6 @@
 
 #menu_3 {
   animation: SlideBotToTop 1000ms 600ms backwards;
-}
-
-@keyframes SlideBotToTop {
-  0% {
-    transform: translateY(20%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=_menu_francaise.css.map */
