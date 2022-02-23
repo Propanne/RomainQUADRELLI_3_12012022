@@ -44,6 +44,7 @@
   left: 0;
   bottom: 0;
   background-image: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 4px 9px 1px #dedede;
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
