@@ -1,0 +1,33 @@
+.background--grey {
+  background-color: #EBEBEB;
+}
+.background--white {
+  background-color: white;
+}
+.background--tertiary {
+  background-color: #99E2D0;
+}
+.background--light-grey {
+  background-color: #f8f8f8;
+}
+.background--green {
+  background-color: #AFFFD0;
+}
+
+.card-round--low {
+  border-radius: 5px;
+}
+.card-round--medium {
+  border-radius: 10px;
+}
+.card-round_top--medium {
+  border-radius: 10px 10px 0px 0px;
+}
+.card-round_top--high {
+  border-radius: 40px 40px 0px 0px;
+}
+.card-shadow {
+  box-shadow: 0px 4px 9px 1px #dedede;
+}
+
+/*# sourceMappingURL=_cards.css.map */

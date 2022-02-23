@@ -1,0 +1,142 @@
+.background--grey {
+  background-color: #EBEBEB;
+}
+.background--white {
+  background-color: white;
+}
+.background--tertiary {
+  background-color: #99E2D0;
+}
+.background--light-grey {
+  background-color: #f8f8f8;
+}
+.background--green {
+  background-color: #AFFFD0;
+}
+
+.flexbox-horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flexbox--space-between {
+  justify-content: space-between;
+}
+.flexbox--nowrap {
+  flex-wrap: nowrap;
+}
+.flexbox-padding {
+  padding: 20px 22px 40px 22px;
+}
+.flexbox--children-right {
+  justify-content: flex-end;
+}
+.flexbox--children-center {
+  align-items: center;
+  justify-content: center;
+}
+.flexbox--children-baseline {
+  align-items: baseline;
+}
+.flexbox--children-flex-end {
+  align-items: flex-end;
+}
+.flexbox-item--full-width {
+  flex-basis: 100%;
+}
+.flexbox-item--5 {
+  flex-basis: 5%;
+}
+.flexbox-item--10 {
+  flex-basis: 10%;
+}
+.flexbox-item--20 {
+  flex-basis: 10%;
+}
+.flexbox-item--80 {
+  flex-basis: 80%;
+}
+.flexbox-item--90 {
+  flex-basis: 90%;
+}
+.flexbox-item--95 {
+  flex-basis: 95%;
+}
+
+.responsive-flexbox-item--33 {
+  flex-basis: none;
+}
+.responsive-flexbox-item--30 {
+  flex-basis: none;
+}
+
+@media only screen and (min-width: 989px) {
+  .responsive-flexbox-item--33 {
+    flex-basis: 33%;
+  }
+  .responsive-flexbox-item--30 {
+    flex-basis: 30%;
+  }
+}
+.background--center--no-repeat, #header-illustration {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background--contain {
+  background-size: contain;
+}
+
+#header-illustration {
+  height: 250px;
+  width: 100%;
+  background-image: url("../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+#menu-container {
+  position: relative;
+  top: -50px;
+}
+
+.underline-titles {
+  position: relative;
+}
+
+.underline-titles::after {
+  content: "";
+  background: #99E2D0;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 40px;
+}
+
+#command-button {
+  min-width: 150px;
+}
+
+#menu_1 {
+  animation: SlideBotToTop 1000ms 200ms backwards;
+}
+
+#menu_2 {
+  animation: SlideBotToTop 1000ms 400ms backwards;
+}
+
+#menu_3 {
+  animation: SlideBotToTop 1000ms 600ms backwards;
+}
+
+@keyframes SlideBotToTop {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=_menu_francaise.css.map */

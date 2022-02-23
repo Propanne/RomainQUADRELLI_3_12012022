@@ -1,0 +1,52 @@
+.background--grey {
+  background-color: #EBEBEB;
+}
+.background--white {
+  background-color: white;
+}
+.background--tertiary {
+  background-color: #99E2D0;
+}
+.background--light-grey {
+  background-color: #f8f8f8;
+}
+.background--green {
+  background-color: #AFFFD0;
+}
+
+.round-button {
+  height: 40px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+.round-button--pink {
+  color: white;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+.standard-button {
+  position: relative;
+  z-index: 1;
+}
+.standard-button:hover {
+  cursor: pointer;
+}
+.standard-button:hover::after {
+  opacity: 1;
+}
+.standard-button::after {
+  content: "";
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(#ff93e1, #a16be0);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+
+/*# sourceMappingURL=_buttons.css.map */

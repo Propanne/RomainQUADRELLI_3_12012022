@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.text-main {
+  font-size: 30px;
+}
+.text-submain {
+  font-size: 20px;
+}
+.text--center {
+  text-align: center;
+}
+.text--bold {
+  font-weight: bold;
+}
+.text--no-format {
+  padding: 0;
+  margin: 0;
+}
+.text-padding--5 {
+  padding: 5px;
+}
+.text--green {
+  color: #68B487;
+}
+
+/*# sourceMappingURL=_texts.css.map */

@@ -1,0 +1,10 @@
+.background--center--no-repeat {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background--contain {
+  background-size: contain;
+}
+
+/*# sourceMappingURL=_images.css.map */

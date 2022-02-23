@@ -1,0 +1,66 @@
+.flexbox-horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flexbox--space-between {
+  justify-content: space-between;
+}
+.flexbox--nowrap {
+  flex-wrap: nowrap;
+}
+.flexbox-padding {
+  padding: 20px 22px 40px 22px;
+}
+.flexbox--children-right {
+  justify-content: flex-end;
+}
+.flexbox--children-center {
+  align-items: center;
+  justify-content: center;
+}
+.flexbox--children-baseline {
+  align-items: baseline;
+}
+.flexbox--children-flex-end {
+  align-items: flex-end;
+}
+.flexbox-item--full-width {
+  flex-basis: 100%;
+}
+.flexbox-item--5 {
+  flex-basis: 5%;
+}
+.flexbox-item--10 {
+  flex-basis: 10%;
+}
+.flexbox-item--20 {
+  flex-basis: 10%;
+}
+.flexbox-item--80 {
+  flex-basis: 80%;
+}
+.flexbox-item--90 {
+  flex-basis: 90%;
+}
+.flexbox-item--95 {
+  flex-basis: 95%;
+}
+
+.responsive-flexbox-item--33 {
+  flex-basis: none;
+}
+.responsive-flexbox-item--30 {
+  flex-basis: none;
+}
+
+@media only screen and (min-width: 989px) {
+  .responsive-flexbox-item--33 {
+    flex-basis: 33%;
+  }
+  .responsive-flexbox-item--30 {
+    flex-basis: 30%;
+  }
+}
+
+/*# sourceMappingURL=_flexbox.css.map */

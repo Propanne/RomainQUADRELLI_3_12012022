@@ -1,0 +1,110 @@
+.background--grey {
+  background-color: #EBEBEB;
+}
+.background--white {
+  background-color: white;
+}
+.background--tertiary {
+  background-color: #99E2D0;
+}
+.background--light-grey {
+  background-color: #f8f8f8;
+}
+.background--green {
+  background-color: #AFFFD0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.text-main {
+  font-size: 30px;
+}
+.text-submain {
+  font-size: 20px;
+}
+.text--center {
+  text-align: center;
+}
+.text--bold {
+  font-weight: bold;
+}
+.text--no-format {
+  padding: 0;
+  margin: 0;
+}
+.text-padding--5 {
+  padding: 5px;
+}
+.text--green {
+  color: #68B487;
+}
+
+.background--grey {
+  background-color: #EBEBEB;
+}
+.background--white {
+  background-color: white;
+}
+.background--tertiary {
+  background-color: #99E2D0;
+}
+.background--light-grey {
+  background-color: #f8f8f8;
+}
+.background--green {
+  background-color: #AFFFD0;
+}
+
+.logo--purple {
+  color: #9356DC;
+}
+.logo_company-background, header {
+  background-image: url("../images/ohmyfood@2x.svg");
+}
+
+.footer-logo {
+  height: 50px;
+  width: 100px;
+}
+
+.heart-icon {
+  font-weight: 400;
+  transition: font-weight 3000ms cubic-bezier(0, 1.7, 0.49, 0.54);
+  transition-duration: 1000ms;
+}
+.heart-icon:active, .heart-icon:hover {
+  font-weight: 900;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70px;
+}
+
+footer {
+  background-color: #393939;
+  color: white;
+}
+
+.section-fonctionnement {
+  padding: 40px 20px;
+}
+.section-restaurants {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=_block.css.map */
