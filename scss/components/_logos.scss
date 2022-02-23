@@ -6,6 +6,9 @@
   }
   &_company-background{
     background-image: url("../images/ohmyfood@2x.svg");
+    &--white{
+      background-image: url("../images/ohmyfood_white");
+    }
   }
 }
 .footer-logo{
