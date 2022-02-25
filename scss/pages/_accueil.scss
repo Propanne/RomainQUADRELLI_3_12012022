@@ -72,8 +72,31 @@ $arrow-delay: 1000ms;
 .new-tag{
   text-align: center;
   width:70px;
-  height: 20px;
+  height: 13px;
   margin: 10px;
+}
+
+.tmp{
+  transition: background-color 1000ms ease-in-out;
+}
+.fonctionnement{
+  &-container{
+    &:hover{
+      cursor: pointer;
+      & > div {
+        background-color: lighten($color-primary, 36%);
+      }
+      & > div > i {
+        color: $color-primary;
+      }
+    }
+  }
+  &-icons{
+    transition: color 500ms ease-in-out;
+  }
+  &-description{
+    transition: background-color 500ms ease-in-out;
+  }
 }
 
 // ################################### LOADING ARROW
@@ -86,7 +109,7 @@ $arrow-delay: 1000ms;
 }
 @keyframes RemoveLoading {
   0% {
-    transform: translateY(0px);
+    transform: scale(1);
     opacity: 1;
   }
   20% {
@@ -104,7 +127,7 @@ $arrow-delay: 1000ms;
     animation-timing-function: ease-in-out;
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-70px);
     opacity: 1;
   }
 }

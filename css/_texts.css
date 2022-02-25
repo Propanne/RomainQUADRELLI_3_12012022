@@ -16,6 +16,9 @@ a {
   text-align: center;
 }
 
+.text-size--13 {
+  font-size: 13px;
+}
 .text-main {
   font-size: 30px;
 }
@@ -37,6 +40,9 @@ a {
 }
 .text--green {
   color: #68B487;
+}
+.text--dark-green {
+  color: #3c7a55;
 }
 .text--white {
   color: white;

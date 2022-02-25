@@ -17,6 +17,11 @@ a{
   text-align: center;
 }
 .text{
+  &-size{
+    &--13{
+      font-size: 13px;
+    }
+  }
   &-main{
     font-size:30px;
   }
@@ -40,6 +45,9 @@ a{
   }
   &--green{
     color: #68B487;
+  }
+  &--dark-green{
+    color: darken(#68B487,20%);
   }
   &--white{
     color: white;

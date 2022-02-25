@@ -191,8 +191,28 @@
 .new-tag {
   text-align: center;
   width: 70px;
-  height: 20px;
+  height: 13px;
   margin: 10px;
+}
+
+.tmp {
+  transition: background-color 1000ms ease-in-out;
+}
+
+.fonctionnement-container:hover {
+  cursor: pointer;
+}
+.fonctionnement-container:hover > div {
+  background-color: #f4eefc;
+}
+.fonctionnement-container:hover > div > i {
+  color: #9356DC;
+}
+.fonctionnement-icons {
+  transition: color 500ms ease-in-out;
+}
+.fonctionnement-description {
+  transition: background-color 500ms ease-in-out;
 }
 
 #loading-arrow {
@@ -205,7 +225,7 @@
 
 @keyframes RemoveLoading {
   0% {
-    transform: translateY(0px);
+    transform: scale(1);
     opacity: 1;
   }
   20% {
@@ -223,7 +243,7 @@
     animation-timing-function: ease-in-out;
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-70px);
     opacity: 1;
   }
 }
