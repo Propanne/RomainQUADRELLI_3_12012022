@@ -43,6 +43,9 @@
 .display--none {
   display: none;
 }
+.display--inline {
+  display: inline;
+}
 
 .width--17px {
   width: 17px;
