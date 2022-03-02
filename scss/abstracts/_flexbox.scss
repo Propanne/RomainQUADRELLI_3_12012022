@@ -28,7 +28,7 @@
   }
   &-item{
     &--flex-end{
-      align-self: flex-end; 
+      align-self: flex-end;
     }
     &--full-width{
       width: 100%;
@@ -62,10 +62,10 @@
 .responsive-flexbox{
   &-item{
     &--33{
-      flex-basis: none;
+      flex-basis: 100%;
     }
     &--30{
-      flex-basis: none;
+      flex-basis: 100%;
     }
   }
 }
