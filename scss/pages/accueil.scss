@@ -1,0 +1,133 @@
+@import '../abstracts/colors.scss';
+@import '../abstracts/flexbox.scss';
+@import '../components/cards.scss';
+@import '../components/images.scss';
+
+$loading-duration: 1500ms;
+$loading-delay: 1000ms;
+$arrow-duration: 1000ms;
+$arrow-delay: 1000ms;
+
+
+.flexbox-fonctionnement--format{
+  margin-bottom: 20px;
+}
+.card{
+  background-color: lighten($basic-grey,5%);
+  align-items: center;
+  &-fonctionnement--padding{
+    padding: 10px 30px 10px 30px;
+  }
+}
+.text{
+  &-fonctionnement{
+    &--padding{
+      padding-left: 30px;
+    }
+  }
+}
+.numero-fonctionnement{
+  position: relative;
+  right: -6px;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  line-height: 24px;
+  text-align:center;
+  margin:0;
+  padding:0;
+  color: white;
+  background-color: $color-primary;
+}
+.logo {
+  &-fonctionnement{
+    padding-left: 30px;
+  }
+}
+// ILLUSTRATION RESTAURANTS
+%illu-restaurants {
+  height: 200px;
+  @extend .background--center--no-repeat
+}
+#illu-palette-gout {
+  background-image: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  @extend %illu-restaurants;
+  @extend .card-round_top--medium;
+}
+#illu-note-enchantee {
+  background-image: url("../images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  @extend %illu-restaurants;
+  @extend .card-round_top--medium;
+}
+#illu-francaise {
+  background-image: url("../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  @extend %illu-restaurants;
+  @extend .card-round_top--medium;
+}
+#illu-delice-sens {
+  background-image: url("../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  @extend %illu-restaurants;
+  @extend .card-round_top--medium;
+}
+.new-tag{
+  text-align: center;
+  width:70px;
+  height: 13px;
+  margin: 10px;
+}
+
+.tmp{
+  transition: background-color 1000ms ease-in-out;
+}
+.fonctionnement{
+  &-container{
+    &:hover{
+      cursor: pointer;
+      & > div {
+        background-color: lighten($color-primary, 36%);
+      }
+      & > div > i {
+        color: $color-primary;
+      }
+    }
+  }
+  &-icons{
+    transition: color 500ms ease-in-out;
+  }
+  &-description{
+    transition: background-color 500ms ease-in-out;
+  }
+}
+
+// ################################### LOADING ARROW
+
+#loading-arrow{
+  animation: RemoveLoading $arrow-duration $arrow-delay both;
+}
+#menu-list{
+  animation: LoadingArrow $loading-duration $loading-delay both;
+}
+@keyframes RemoveLoading {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(999px);
+    opacity: 0;
+  }
+}
+@keyframes LoadingArrow{
+  0% {
+    transform: translateY(999px);
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(-70px);
+    opacity: 1;
+  }
+}
